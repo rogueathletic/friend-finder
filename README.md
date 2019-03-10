@@ -18,7 +18,7 @@
 
 
 
-<details style="-webkit-appearance: none;" align="center"><summary align="justify"><h1>Best Friend Finder</h1></summary>
+<details style="-webkit-appearance: none;" align="center"><summary align="justify"><h1>Best Friend Finder</h1><<br><h4> C L I C K &nbsp; H E R E &nbsp; T O &nbsp; R E A D &nbsp; M O R E</h4>/summary>
   <span><h2>UCSD</h2></span><span><h3>Full Stack Web Dev Assignment 14</h3></span>
 
 

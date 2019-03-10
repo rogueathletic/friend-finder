@@ -4,7 +4,7 @@
 
 
 <details align="center"><summary align="justify"><h1>Best Friend Finder</h1></summary>
-
+  <span><h2>UCSD</h2></span><span><h3>Full Stack Web Dev Assignment 14</h3></span>
 
 
 

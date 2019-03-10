@@ -1,14 +1,14 @@
 
-<ul align="center">
-  <li> Home </li> | 
-  <li> Index </li> | 
-  <li> Intro </li> | 
-  <li> HTML/CSS </li> | 
-  <li> Express.js </li> | 
-  <li> Heroku </li> | 
-  <li> Youtube </li> | 
-  <li> Contact </li>
-</ul>
+<div align="center">
+  <span> Home </span> | 
+  <span> Index </span> | 
+  <span> Intro </span> | 
+  <span> HTML/CSS </span> | 
+  <span> Express.js </span> | 
+  <span> Heroku </span> | 
+  <span> Youtube </span> | 
+  <span> Contact </span>
+</div>
 
 
 

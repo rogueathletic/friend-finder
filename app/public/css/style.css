@@ -83,13 +83,17 @@
         z-index: 99999;
     }
 
-/* -----------------------------------> S U R V E Y  B O D Y   B E L O W  <----------------------------------- */
+/* ----------------------------------->   B O D Y   B E L O W  <----------------------------------- */
 
    #survey-body{
        width: 80vw;
        margin: 2vh 0 2vh 10vw;
        border-radius: 20px;
-       overflow: contain;
+       overflow: scroll;
+   }
+
+   #body{
+      position: fixed; 
    }
 
    /* ------------------------------------> D O G  I M A G E S  B E L O W  <-------------------------------------- */
@@ -97,19 +101,31 @@
    #home-pg-img{
     z-index: -99;
     width: 130%;
-    margin: -40vh 0 0 -15%;
-    position: static;
+    min-height: 900px;
+    min-width: 900px;
+    margin: -10vh 0 0 -15%;
+    position: relative;
+    background-size: cover;
 }
 #survey-pg-img{
     z-index: -999999999;
     opacity: 0.7;
     margin: 0;
+    min-height: 900px;
+    min-width: 900px;
     left: -100px;
     top: -100px;
     right: -100px;
     width: 120%;
-    position: absolute;
+    position: fixed;
 }
+
+@media only screen and (max-width: 400px) {
+    #survey-pg-img {
+    opacity: 0.0;
+  
+    }
+  }
 
 /* -------------------------------> M A T E R I A L I Z E D  I C O N  B E L O W  <------------------------------- */
 
@@ -122,8 +138,10 @@
 /* -----------------------------------> B O T H  B U T T O N S   B E L O W  <----------------------------------- */
 #start-button{
 width: 55vw;
-margin: -110px 0 0 0;
+margin: -115px 0 0 0;
 border-radius: 0 0 25px 25px;
+position: static;
+z-index: 999999999;
 }
 
 #submitButton2{
@@ -131,6 +149,7 @@ border-radius: 0 0 25px 25px;
     margin: 0 0 0 4vw;
     border-radius:25px 25px 0 0;
     opacity: .95;
+    position: static;
 }
 /* -----------------------------------> L I N K  T E X T  C O L O R  B E L O W  <----------------------------------- */
 a{
@@ -158,6 +177,7 @@ height: auto;
         -ms-animation: fadein 2s; /* Internet Explorer */
          -o-animation: fadein 2s; /* Opera < 12.1 */
             animation: fadein 2s;
+         
 }
 
 @keyframes fadein {

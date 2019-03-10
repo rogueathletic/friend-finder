@@ -1,13 +1,13 @@
 
 <div align="center">
-  <span> Home </span> | 
-  <span> Index </span> | 
-  <span> Intro </span> | 
-  <span> HTML/CSS </span> | 
-  <span> Express.js </span> | 
-  <span> Heroku </span> | 
-  <span> Youtube </span> | 
-  <span> Contact </span>
+  <span> <a href="#top"> Home </a> </span> | 
+  <span> <a href="#index"> Index </a> </span> | 
+  <span> <a href="#intro"> Intro </a> </span> | 
+  <span> <a href="#htss"> HTML/CSS </a> </span> | 
+  <span> <a href="#express"> Express.js </a> </span> | 
+  <span> <a href="#heroku"> Heroku </a> </span> | 
+  <span> <a href="#youtube"> Youtube </a> </span> | 
+  <span> <a href="mailto:jason@rogueathletic.com" target="_blank"> Contact </a> </span>
 </div>
 
 

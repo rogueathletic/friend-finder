@@ -1,15 +1,22 @@
-
+html{
+    background: linear-gradient()
+}
 /* ----------------------------> H O M E  P A G E  E L E M E N T S  B E L O W  <------------------------------- */
 #home__box{
     width: 70vw;
-    margin: 200px 0 0 15vw;
+    margin: 200px 0 0 1vw;
     padding: 5vh 7vw;
     overflow: hidden;
     box-shadow:  11px 11px 33px black;
-    border-radius: 100px;
+
     height: 60vh;
     display:inline-block;
     z-index: 9999999999999;
+    background: url(../Bailey-2.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
     }
     
     #start-txt{
@@ -22,6 +29,7 @@
    
     color: rgba(255, 255, 255, 0.65);
     text-shadow: 1px 1px 3px black;
+    margin: 0 0 0 -6vw;
     font-size: 12px;
  
 }
@@ -40,24 +48,7 @@
         margin-right:-100%;
     }
 
-    #footer_survey{
-        
-    }
 
-    #span-footer { 
-        display:inline;
-        word-wrap:break-word;
-    }
-
-
-
-    @media only screen and (max-width: 450px) {
-        #footer_main {
-          margin: 0 0 0 35vw;
-          max-width: 30vw;
-
-        }
-      }
 
 /* -----------------------------------> H O M E  P A G E  H E A D E R   B E L O W  <----------------------------------- */
 
@@ -76,14 +67,14 @@
         justify-content: space-between;
         letter-spacing: 1vw;
         color: rgb(255, 255, 255);
-        text-shadow: 1px 1px 22px rgba(0, 0, 0, 0.438);
+        /* text-shadow: 1px 1px 22px rgba(0, 0, 0, 0.438); */
         z-index: -9999999;
     }
 
     #homepg-hdr-finder{
         position: absolute; 
-        color: rgb(146, 228, 207);
-        text-shadow: 1px 1px 22px rgba(0, 0, 0, 0.438);
+        color: rgb(49, 114, 98);
+        /* text-shadow: 1px 1px 22px rgba(0, 0, 0, 0.438); */
         left: 0; 
         right: 0; 
         margin: 140px 0 0 35vw; 
@@ -103,108 +94,90 @@
         z-index: 99999;
     }
 
-/* ----------------------------------->   B O D Y   B E L O W  <----------------------------------- */
+/* ----------------------------------------->   B O D Y   B E L O W  <--------------------------------------------- */
 
-   #survey-body{
-       width: 80vw;
+   #survey-body {
        margin: 2vh 0 2vh 10vw;
-       border-radius: 20px;
-       overflow: scroll;
+       overflow: hidden !important;
+       width: 80vw;
+       
+       font-family: 
+            'Montserrat', 
+            sans-serif; 
+            font-weight: 200; 
+            font-style:auto;
+        background: url(../Bailey-2.png) 
+                    no-repeat 
+                    center 
+                    center 
+                    fixed; 
+        -webkit-background-size: cover;
+           -moz-background-size: cover;
+             -o-background-size: cover;
+                background-size: cover;
    }
 
-   #body{
-      position: fixed; 
+   #body {
+      /* position: fixed; */
+      font-family: 'Montserrat', sans-serif; font-weight: 300; font-style:auto; 
    }
 
    /* ------------------------------------> D O G  I M A G E S  B E L O W  <-------------------------------------- */
 
-   #home-pg-img{
-    z-index: -99;
-    width: 130%;
-    min-height: 900px;
-    min-width: 900px;
-    margin: -30vh 0 0 -15%;
-    position: relative;
-    background-size: cover;
-}
-
-@media only screen and (max-width: 1350px) {
-    #home-pg-img {
-      margin: -14vh 0 0 -20vw;
-
-    }
-  }
-
-  @media only screen and (max-width: 600px) {
-    #home-pg-img {
-      margin: -14vh 0 0 -10vw;
-      width: 40%;
-    }
-  }
 
 
-  #survey-pg-img{
-    z-index: -999999999;
-    opacity: 0.7;
-    margin: 0;
-    min-height: 900px;
-    min-width: 900px;
-    left: -100px;
-    top: -100px;
-    right: -100px;
-    width: 120%;
-    position: fixed;
-}
-
-@media only screen and (max-width: 400px) {
-    #survey-pg-img {
-    opacity: 0.0;
-  
-    }
-  }
 
 /* -------------------------------> M A T E R I A L I Z E D  I C O N  B E L O W  <------------------------------- */
 
-   .material-icons{
+   .material-icons {
     color: rgba(20, 68, 60, 0.205);
     padding: 0 0 0 4px;
     
 }
 
 /* -----------------------------------> B O T H  B U T T O N S   B E L O W  <----------------------------------- */
-#start-button{
+#start-button {
 width: 55vw;
-margin: -100px 0 0 0;
+margin: -120px 0 0 0;
 border-radius: 0 0 25px 25px;
 position: static;
-z-index: 999999999;
+
+overflow: hidden;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 700px) {
     #start-button {
-        margin: -100px 0 0 1vw;
+        margin: -7vw 0 0 1vw !important;
+        border-radius: 0 0 25px 25px;
     }
   }
 
-#submitButton2{
-    width: 70vw;
-    margin: 0 0 0 4vw;
+#submitButton2 {
+    width: 300px;
+    margin: 0 0 0 0;
     border-radius:25px 25px 0 0;
     opacity: .95;
     position: static;
+    z-index: -199999999;
+}
+
+#sbmt-txt{
+    margin: 0 0 0 0;
 }
 /* -----------------------------------> L I N K  T E X T  C O L O R  B E L O W  <----------------------------------- */
 a{
     color: #55aeae;
-    text-shadow: 1px 1px 3px black;
+    text-shadow: 1px 1px black;
 }
 
 a:hover {
-    filter: invert(20%);
+
+    color: #33cccc;
 }
 
 .select-dropdown,
-#fde-quicker{
+#fde-quicker {
+    opacity:.7;
     -webkit-animation: fadein .1s; /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: fadein .1s; /* Firefox < 16 */
      -ms-animation: fadein .1s; /* Internet Explorer */
@@ -216,14 +189,14 @@ a:hover {
 /* ------------------->  The code below is the smoote in and out transiton you see on load  <------------------- */
    * {
 height: auto;
-    text-align: justify;
-    border-radius: 25px 0 25px 25px;
+    text-align: center;
+    border-radius: 1vh 1vw 6vh 1vw;
     -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 2s; /* Firefox < 16 */
         -ms-animation: fadein 2s; /* Internet Explorer */
          -o-animation: fadein 2s; /* Opera < 12.1 */
             animation: fadein 2s;
-         
+        
 }
 
 @keyframes fadein {
@@ -253,4 +226,55 @@ height: auto;
 @-o-keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
+}
+
+#sfkh {
+background-clip: rgba(85, 174, 174, 0.274), rgba(255, 255, 255, 0), rgba(60, 231, 208, 0.2), rgba(98, 184, 172, 0.2),
+}
+
+/* -------------------> A N I M A T I O N  S I T E  B A C K G R O U N D  B E L O W  <--------------------- */
+
+
+body {
+	background: linear-gradient(-45deg, white,silver, white,grey, white);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
 }

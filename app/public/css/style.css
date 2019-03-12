@@ -104,6 +104,11 @@ margin:0 0 0 60px;
                 background-size: cover;
    }
 
+   #survey-title {
+    font-size: 8vw;
+
+   }
+
    #body {
       /* position: fixed; */
       font-family: 'Montserrat', sans-serif; font-weight: 300; font-style:auto; 
@@ -116,6 +121,13 @@ margin:0 0 0 60px;
     padding: 0 0 0 4px;
     
 }
+/* -------------------------------> M A T C H E D  D O G S  I M G' S  B E L O W  <------------------------------- */
+
+
+img {
+height: 50vh;
+width: 75vw;
+};
 
 /* -----------------------------------> B O T H  B U T T O N S   B E L O W  <----------------------------------- */
 #start-button {

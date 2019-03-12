@@ -19,15 +19,29 @@
 /* -----------------------------------> F O O T E R  S T Y L E   B E L O W  <----------------------------------- */
 
 #footer_main{
-    margin: 0 37vw 0 40vw;
+   
     color: rgba(255, 255, 255, 0.65);
     text-shadow: 1px 1px 3px black;
     font-size: 12px;
+ 
 }
-
+#footer_main:hover {
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px black;
+}
     footer{
-        margin: 1vh 0 0 45%;
-        position: fixed;
+        position: left;
+        clear: both;
+        text-align:center;
+        height: 50px;	
+        line-height: 50px;
+        font-size: 80%;
+        margin-left:-80%;
+        margin-right:-100%;
+    }
+
+    #footer_survey{
+        
     }
 
     #span-footer { 
@@ -35,15 +49,18 @@
         word-wrap:break-word;
     }
 
+
+
+    @media only screen and (max-width: 450px) {
+        #footer_main {
+          margin: 0 0 0 35vw;
+          max-width: 30vw;
+
+        }
+      }
+
 /* -----------------------------------> H O M E  P A G E  H E A D E R   B E L O W  <----------------------------------- */
-#home-title{
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-}
+
 
 #open-title{
         
@@ -51,14 +68,16 @@
     left: 0; 
     right: 0; 
     top: 0;
-    margin-left: 6vw; 
-    margin-right: auto; 
-    width: 94vw; /* Need a specific value to work */
+    margin: 30px 0 0 20vw; 
+    font-size: 5vw;
+
+    width: 80vw; /* Need a specific value to work */
         display: flex;
         justify-content: space-between;
-        letter-spacing: 3vw;
+        letter-spacing: 1vw;
         color: rgb(255, 255, 255);
         text-shadow: 1px 1px 22px rgba(0, 0, 0, 0.438);
+        z-index: -9999999;
     }
 
     #homepg-hdr-finder{
@@ -67,14 +86,15 @@
         text-shadow: 1px 1px 22px rgba(0, 0, 0, 0.438);
         left: 0; 
         right: 0; 
-        margin: 130px 0 auto 35vw; 
-        width: 94vw; /* Need a specific value to work */
+        margin: 140px 0 0 35vw; 
+        width: 100vw; /* Need a specific value to work */
             display: flex;
             justify-content: space-between;
             letter-spacing: 3vw;
             font-size: 20px;
     };
-/* -----------------------------------> Q U E S T I O N S   B E L O W  <----------------------------------- */
+
+/* -----------------------------------> Q U E S T I O N S  B E L O W  <----------------------------------- */
 
 
     #basic-ques,
@@ -103,11 +123,27 @@
     width: 130%;
     min-height: 900px;
     min-width: 900px;
-    margin: -10vh 0 0 -15%;
+    margin: -30vh 0 0 -15%;
     position: relative;
     background-size: cover;
 }
-#survey-pg-img{
+
+@media only screen and (max-width: 1350px) {
+    #home-pg-img {
+      margin: -14vh 0 0 -20vw;
+
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    #home-pg-img {
+      margin: -14vh 0 0 -10vw;
+      width: 40%;
+    }
+  }
+
+
+  #survey-pg-img{
     z-index: -999999999;
     opacity: 0.7;
     margin: 0;
@@ -138,11 +174,17 @@
 /* -----------------------------------> B O T H  B U T T O N S   B E L O W  <----------------------------------- */
 #start-button{
 width: 55vw;
-margin: -115px 0 0 0;
+margin: -100px 0 0 0;
 border-radius: 0 0 25px 25px;
 position: static;
 z-index: 999999999;
 }
+
+@media only screen and (max-width: 400px) {
+    #start-button {
+        margin: -100px 0 0 1vw;
+    }
+  }
 
 #submitButton2{
     width: 70vw;
@@ -157,6 +199,10 @@ a{
     text-shadow: 1px 1px 3px black;
 }
 
+a:hover {
+    filter: invert(20%);
+}
+
 .select-dropdown,
 #fde-quicker{
     -webkit-animation: fadein .1s; /* Safari, Chrome and Opera > 12.1 */
@@ -167,11 +213,11 @@ a{
 }
 
 /* -------------------> A N I M A T I O N/T O T A L  B O R D E R  R A D I U S  B E L O W  <--------------------- */
-
+/* ------------------->  The code below is the smoote in and out transiton you see on load  <------------------- */
    * {
 height: auto;
     text-align: justify;
-    border-radius: 25px;
+    border-radius: 25px 0 25px 25px;
     -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 2s; /* Firefox < 16 */
         -ms-animation: fadein 2s; /* Internet Explorer */

@@ -143,7 +143,7 @@ overflow: scroll;
 #start-button {
 width: 55vw;
 /* padding: 8px 0 8px 0; */
-margin: -6.em 0 0 0;
+margin: -7em 0 0 0;
 border-radius: 0 0 25px 25px;
 position: static;
 overflow: hidden;
@@ -159,7 +159,7 @@ overflow: hidden;
     width: 300px;
     margin: 0 0 0 0;
     border-radius:25px 25px 0 0;
-    opacity: .95;
+    opacity: 0.95;
     position: static;
     z-index: -199999999;
 }

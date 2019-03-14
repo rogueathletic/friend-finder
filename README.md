@@ -1,12 +1,10 @@
 
 <div align="center">
   <span> <a href="#top"> Home </a> </span> | 
-  <span> <a href="#index"> Index </a> </span> | 
-  <span> <a href="#intro"> Intro </a> </span> | 
-  <span> <a href="#htss"> HTML/CSS </a> </span> | 
-  <span> <a href="#express"> Express.js </a> </span> | 
-  <span> <a href="#heroku"> Heroku </a> </span> | 
-  <span> <a href="#youtube"> Youtube </a> </span> | 
+  <span> <a href="#intro"> D E M O </a> </span> | 
+  <span> <a href="#htss"> H T M L \ C S S </a> </span> | 
+  <span> <a href="#express"> E X P R E S S </a> </span> | 
+  <span> <a href="#heroku"> H E R O K U </a> </span> | 
   <span> <a href="mailto:jason@rogueathletic.com" target="_blank"> Contact </a> </span>
 </div>
 
@@ -28,17 +26,45 @@
 
 
 
-<details align="center"><summary align="justify">Intro</summary>content</details>
+<details align="center"><summary align="justify"> D E M O </summary><a href="https://www.youtube.com/watch?v=JHurCXqH6KI">
+<img src="https://i.imgur.com/cS1UuUW.png" width="80%">
+</a></details>
 
-<details align="center"><summary align="justify">title</summary>content</details>
+<details align="center"><summary align="justify"> S E R V E R . J S </summary><p>The server configuration 
+  ```js
+  // Pull in required dependencies
+var express = require('express');
+var bodyParser = require('body-parser');
+var path = require('path');
 
-<details align="center"><summary align="justify">title</summary>content</details>
+// Configure the Express application
+var app = express();
+var PORT = process.env.PORT || 8080;
 
-<details align="center"><summary align="justify">title</summary>content</details>
+// Expose the public directory to access CSS files
+app.use(express.static(path.join(__dirname, './app/public')));
 
-<details align="center"><summary align="justify">title</summary>content</details>
+// Add middleware for parsing incoming request bodies
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.text());
 
-<details align="center"><summary align="justify">title</summary>content</details>
+// Add the application routes
+require(path.join(__dirname, './app/routing/apiRoutes'))(app);
+require(path.join(__dirname, './app/routing/htmlRoutes'))(app);
+
+// Start listening on PORT
+app.listen(PORT, function() {
+  console.log('Friend Finder app is listening on PORT: ' + PORT);
+});
+```
+</p></details>
+
+<details align="center"><summary align="justify"> E X P R E S S . J S </summary>content</details>
+
+<details align="center"><summary align="justify"> H E R O K U </summary>content</details>
+
+<details align="center"><summary align="justify"> C O N T A C T </summary>  <span> <a href="mailto:jason@rogueathletic.com" target="_blank"> Contact </a> </span></details>
 </details>
 
 

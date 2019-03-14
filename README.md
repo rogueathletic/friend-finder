@@ -30,8 +30,9 @@
 <img src="https://i.imgur.com/cS1UuUW.png" width="80%">
 </a></details>
 
-<details align="center"><summary align="justify"> S E R V E R . J S </summary><p>The server configuration 
+<details align="center"><summary align="justify"> S E R V E R . J S </summary><p>The server configuration</p> 
   ```js
+  //
   // Pull in required dependencies
 var express = require('express');
 var bodyParser = require('body-parser');
@@ -58,7 +59,7 @@ app.listen(PORT, function() {
   console.log('Friend Finder app is listening on PORT: ' + PORT);
 });
 ```
-</p></details>
+</details>
 
 <details align="center"><summary align="justify"> E X P R E S S . J S </summary>content</details>
 

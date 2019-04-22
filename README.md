@@ -4,7 +4,7 @@
   <span> <a href="#intro"> D E M O </a> </span> | 
   <span> <a href="#htss"> H T M L \ C S S </a> </span> | 
   <span> <a href="#express"> E X P R E S S </a> </span> | 
-  <span> <a href="#heroku"> H E R O K U </a> </span> | 
+  <span> <a href="https://salty-peak-59933.herokuapp.com/">P L A Y &nbsp; A T &nbsp; H E R O K U </a> </span> | 
   <span> <a href="mailto:jason@rogueathletic.com" target="_blank"> Contact </a> </span>
 </div>
 
